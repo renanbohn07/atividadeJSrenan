@@ -183,3 +183,58 @@ else {
 
 //--------------------------------
 
+var lados = 3
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+var lados = 4
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+var lados = 5
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+//-------------------------------------------
+
+var lados = 8 
+
+if (lados == 3) {
+  console.log("Triângulo")
+}
+else if (lados == 4) {
+  console.log("Quadrado")
+}
+else if (lados == 5) {
+  console.log("Pentágono")
+}
+else if (lados > 5) {
+  console.log("Polígono Não identificado")
+}
+else {
+  console.log("Não é Um Polígono")
+}
+
+//--------------------------------------------
+
