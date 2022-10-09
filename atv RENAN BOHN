@@ -1,0 +1,459 @@
+//Crie um código que consiga imprimir os tipos de 3 variáveis diferentes;
+
+var x = "string"
+console.log(x)
+
+let y = 12
+console.log(y)
+
+const z = 12.5
+console.log (z)
+
+
+//Crie um código capaz de calcular a raiz quadrada de um número;
+
+var x = 64
+var resultado = Math.sqrt(64)
+
+console.log(resultado)
+
+
+//Crie um código capaz de calcular a potência 2 de um número;
+
+var x = 5
+
+console.log(x**2)
+
+//Crie um código que calcule a hipotenusa através do teorema de pitágoras;
+
+var c1 = 10
+var c2 = 10
+hipotenusa = (c1 * c1) + (c2 * c2);
+
+console.log(Math.sqrt(hipotenusa))
+
+//Crie um código capaz de calcular a fórmula de bhaskara;
+
+var a = 8;
+var b = 5;
+var c = -25;
+var coef1;
+var coef2;
+
+var delta = (b * b) - 4 * a *c;
+
+console.log("delta = "+delta)
+
+coef1 = (-b + Math.sqrt(delta)) / (2*a);
+coef2 = (-b - Math.sqrt(delta)) / (2*a);
+
+
+console.log("coeficiente 1 = "+ coef1);
+console.log("coeficiente 2 = "+ coef2);
+
+
+//Crie um array de string e imprima a posição 2;
+
+    const dados = [
+      "nome: Renan", "idade: 21", "altura: 1.70"]
+
+    console.log(dados[1])
+    
+    
+//Crie um array de string e concatene o valor da posição 2 com a posição 3;
+
+const dados = [
+  "nome: Renan", "idade: 21", "altura: 1.70"]
+
+console.log(dados[1]+dados[2])
+
+//Crie um array e remova o índice 2;
+
+const dados = [
+  "nome: Renan", "idade: 21", "altura: 1.70"
+]
+ 
+dados.splice(1,1)
+
+console.log(dados)
+
+//Crie um array e remova o primeiro ítem da lista;
+
+const dados = [
+  "nome: Renan", "idade: 21", "altura: 1.70"
+]
+ 
+dados.splice(0,1)
+
+console.log(dados)
+
+//Crie um array e adicione um valor no final do array;
+
+const dados = [
+  "nome: Renan", "idade: 21", "altura: 1.70"
+]
+ 
+dados.push("peso: 68") 
+
+console.log(dados)
+
+
+//Crie um código utilizando a estrutura switch case e imprima qual estado corresponde a sigla informada. Exemplo: RO corresponde a Rondônia, SP corresponde à São Paulo e ZT não corresponde a nenhum estado;
+
+let estado = "RO"
+switch (estado) {
+    case "RO" :
+        console.log("corresponde a Rondonia")
+        break
+        case "SP":
+            console.log("corresponde a Sao Paulo")
+            break
+            case "ZT" :
+                console.log("nao corresponde a nenhum estado")
+                break
+              }
+              
+
+//Escreva um programa para ler 2 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+var valor1 = 30
+var valor2 = 20
+
+if (valor1 > valor2) {
+console.log("o maior valor é "+ valor1)
+}
+else {
+  console.log("o maior valor é "+ valor2)
+}
+
+//Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+var anoNasc = 2000
+
+if ((2022 - anoNasc) >= 16) {
+  console.log("você pode votar esse ano")
+} 
+else {
+  console.log("você não pode votar esse ano")
+}
+
+//Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o número 1234. Devem ser impressas as seguintes mensagens: ACESSO PERMITIDO caso a senha seja válida. ACESSO NEGADO caso a senha seja inválida.
+
+let senha = 123
+
+if (senha == 1234) {
+    console.log("ACESSO PERMITIDO")
+}
+else {
+    console.log("ACESSO NEGADO")
+}
+
+//As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$ 0,25 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra.
+
+var qtdmaca = 5
+
+if (qtdmaca>=12){
+  var total1 = qtdmaca * 0.25
+
+  console.log("as "+qtdmaca+" maçãs custarão R$"+total1)
+}
+
+else {
+  var total2 = qtdmaca * 0.30
+
+  console.log("as "+qtdmaca+" maçãs custarão R$"+total2)
+}
+
+//Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente
+
+var vlr = [10,60,30]
+vlr.sort(function(a, b){return a - b});
+console.log(vlr)
+  
+
+//17. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1:feminino 2:masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal,utilizando as seguintes Fórmulas: para homens: (72.7 * Altura) – 58. para mulheres: (62.1 * Altura) – 44.7
+
+var sexo = 1
+var altura = 1.70
+
+if (sexo == 2){
+  var pesoideal1 = ((72.7*altura)-58)
+  console.log("seu peso ideal é de: "+pesoideal1)
+}
+else {
+  var pesoideal2 = ((62.1*altura)-44.7)
+  console.log("seu peso ideal é de: "+pesoideal2)
+}
+
+//Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm). Calcular e imprimir o seguinte: − Se o número de lados for igual a 3 escrever TRI NGULO e o valor da área − Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área.− Se o número de lados for igual a 5 escrever PENTÁGONO.
+
+var lados = 3
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+var lados = 4
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+var lados = 5
+
+switch (lados){
+  case 3 : console.log("Triângulo")
+    break
+      case 4 : console.log("Quadrado")
+        break
+          case 5 : console.log("Pentágono")
+            break
+}
+
+//Acrescente as seguintes mensagens à solução do exercício anterior conforme o caso. Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+
+var lados = 8 
+
+if (lados == 3) {
+  console.log("Triângulo")
+}
+else if (lados == 4) {
+  console.log("Quadrado")
+}
+else if (lados == 5) {
+  console.log("Pentágono")
+}
+else if (lados > 5) {
+  console.log("Polígono Não identificado")
+}
+else {
+  console.log("Não é Um Polígono")
+}
+
+//Escreva um programa para ler 3 valores inteiros e escrever o maior deles. Considere que o usuário não informará valores iguais.
+
+var maior = [1,8,2]
+
+console.log(Math.max.apply(null, maior))
+
+//Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que: Triângulo Equilátero: possui os 3 lados iguais.Triângulo Isóscele: possui 2 lados iguais. Triângulo Escaleno: possui 3 lados diferentes.
+
+var lado1 = 11;
+var lado2 = 11;
+var lado3 = 12;
+
+if (lado1 == lado2 && lado1 == lado3) {
+    console.log('triângulo equilátero');
+} else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+    console.log('triângulo isóceles');
+} else if (lado1 != lado2 != lado3) {
+    console.log('triângulo escaleno');
+};
+
+//Escreva um programa que leia o valor de 3 ângulos de um triângulo e escreva se o triângulo é Acutângulo, Retângulo ou Obtusângulo. Sendo que: Triângulo Retângulo: possui um ângulo reto. (igual a 90o) Triângulo Obtusângulo: possui um ângulo obtuso. (maior que90o) Triângulo Acutângulo: possui três ângulos agudos. (menor que 90o)
+
+let angulo1 = 91;
+let angulo2 = 12;
+let angulo3 = 90;
+
+if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90) {
+    console.log('retângulo');
+} else if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90) {
+    console.log('obtusangle');
+} else if (angulo1 < 90 || angulo2 < 90 || angulo3 < 90) {
+    console.log('acutângulo');
+};
+
+
+/*Faça um programa que leia e valide as seguintes informações:
+Dica: se sua variável é **texto**, o tamanho dela está armazenado em: texto.length
+    1. Nome: maior que 3 caracteres;
+    2. Idade: entre 0 e 150;
+    3. Salário: maior que zero;
+    4. Sexo: 'f' ou 'm';
+    5. Estado Civil: 's', 'c', 'v', 'd'; */
+
+    var nome = ["renan"]
+if(nome[0].length > 3) {
+    console.log(`Seu nome: ${nome}, é válido`)
+} else{
+    console.log("Seu nome precisa ter mais de 3 caracteres")
+}
+var idade = [21]
+if(idade>= 0 && idade <= 150) {
+    console.log(`Sua idade: ${idade}, é válido`)
+} else{
+    console.log("Sua idade precisa ser entre 0 e 150")
+}
+var salario = [1212]
+
+if(salario > 0) {
+    console.log(`Seu salário: ${salario}, é válido`)
+} else{
+    console.log("Seu salário precisa ser maior que 0")
+}
+var sexo = ["m"]
+if(sexo == "F" || sexo == "f") {
+    console.log("Possui sexo feminino")
+}else if(sexo == "M" || sexo == "m") {
+    console.log("Possui sexo masculino")
+}
+ else{
+    console.log(`${sexo} não possui sexo correspondente`)
+}
+let estado = ["s"]
+if(estado == "s" || estado == "S") {
+    console.log("Você é solteiro(a)")
+}else if(estado == "c" || estado == "C") {
+    console.log("Você é casado(a)")
+}else if(estado == "v" || estado == "V") {
+    console.log("Você é viúvo(a)")
+}else if(estado == "d" || estado == "D") {
+    console.log("Você é divorciado(a)")
+}
+ else{
+    console.log(`${estado} não possui correspondente`)
+}
+
+
+//Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
+
+let poppais1 = 80000;
+let poppais2 = 200000;
+let txCrescimento1 = 0.03;
+let txCrescimento2 = 0.015;
+let anos = 0;
+
+while (poppais1 < poppais2) {
+    poppais1 = poppais1 + (poppais1 * txCrescimento1);
+    poppais2 = poppais2 + (poppais2 * txCrescimento2);
+    anos = anos + 1;
+};
+console.log(`em ${anos} anos a primeira cidade terá passaado or ou terá a mesma quantidade de habitantes que a segunda cidade`);
+
+// 3- Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação.
+let poppais11, poppais22, txcresc1, txcresc2;
+let anos2 = 0;
+
+poppais11 = 7000
+poppais22 = 500000
+txcresc1 = 3
+txcresc2 = 1
+
+while (poppais11 < poppais22) {
+    poppais11 = poppais11 + (poppais11 * txcresc1);
+    poppais22 = poppais22 + (poppais22 * txcresc2);
+    anos2 = anos2 + 1;
+    
+}; console.log(`em ${anos2} anos a primeira cidade terá passaado or ou terá a mesma quantidade de habitantes que a segunda cidade`);
+
+
+//Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
+let i = 1;
+let funcao = numero => Number(numero)
+while (i < 21) {
+    console.log(i)
+    i++;
+}
+let numerosordenados = Array(i).fill(1).map((x, y) => x + y);
+console.log(numerosordenados);
+
+//Faça um programa que leia 5 números e informe o maior número.
+
+let maiornum = '8 6 4 2 3';
+let func = numero => Number(numero);
+
+let arrnum = Array.from(String(maiornum), func);
+arrnum = arrnum.reduce(function(a, b) {
+    return Math.max(a, b);
+});
+console.log(arrnum);
+
+
+//Faça um programa que leia 5 números e informe a soma e a média dos números.
+
+let numeros = '8 6 4 2 3';
+let func = numero => Number(numero);
+
+let arrnum = Array.from(String(numeros), func);
+arrnum = arrnum.reduce(function(soma, i) {
+    return soma + i;
+});
+let media = arrnum / 5;
+
+console.log(`valor total:  ${arrnum}`);
+console.log(`Tmédia: ${media}`);
+
+
+//Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
+
+function impares() {
+  for (let i = 0; i < 50; i++) {
+      if ((i % 2) != 0) {
+          console.log(+ i);
+      };
+  };
+};
+impares();
+
+
+//Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+let numero1 = 5
+let numero2 = 30
+if (numero1 >= 0 && numero2 >= 0) {
+    let i = Math.min(numero1, numero2);
+    while (i <= Math.max(numero1, numero2)) 
+    console.log(i++);
+};
+
+// Altere o programa anterior para mostrar no final a soma dos números.
+
+var num1 = 5
+var num2 = 30
+
+for (i = num1 + 1, i = num2; i < i; i += 1) {console.log(i)}
+
+for (i = num2 + 1, i = num1; i < i; i += 1) {console.log(i)}
+
+console.log("'a soma final é ", (i + i))
+
+// Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+
+let tabuada = 3;
+{
+    for (let i = 0; i < 10; i++) {
+        console.log(`${tabuada} x ${i} = ${tabuada * i}`);
+    }
+};
+
+// Escreva um script que pergunta ao usuário se ele deseja converter uma temperatura de grau Celsius para Farenheit ou vice-versa. Para cada opção, crie uma função. Crie uma terceira, que é um menu para o usuário escolher a opção desejada, onde esse menu chama a função de conversão correta.
+function ConverterCpF() {
+  let tempC = 15
+  
+  let conversao = (tempC * 9/5) + 32
+
+  console.log(`${conversao} farenheit`)
+}
+
+ConverterCpF();
+
+function ConverterFpC() {
+  let tempF = 59
+   
+  let conversao = (tempF - 32) * 5/9
+
+  console.log(`${conversao} celsius`)
+}
+
+ConverterFpC();
+
